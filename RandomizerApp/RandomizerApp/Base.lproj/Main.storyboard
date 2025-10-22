@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="EUg-RD-Rhp">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agatha" translatesAutoresizingMaskIntoConstraints="NO" id="GJ3-fN-ciy">
+                                <rect key="frame" x="80" y="150" width="250" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="G0y-Sp-2Sx" userLabel="width = 400"/>
+                                    <constraint firstAttribute="height" constant="400" id="Rws-cB-YdG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPM-LW-nX5">
+                                <rect key="frame" x="167.66666666666666" y="668.66666666666663" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="randomizeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8B-kY-Cds"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6W-h0-1NV">
+                                <rect key="frame" x="176.66666666666666" y="590" width="56.666666666666657" height="28.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OPM-LW-nX5" firstAttribute="top" secondItem="k6W-h0-1NV" secondAttribute="bottom" constant="50" id="1eO-pa-PcD"/>
+                            <constraint firstItem="GJ3-fN-ciy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="80" id="4jf-rf-mqx"/>
+                            <constraint firstItem="OPM-LW-nX5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AIH-nZ-eKN"/>
+                            <constraint firstItem="GJ3-fN-ciy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BIv-2n-yXj"/>
+                            <constraint firstItem="GJ3-fN-ciy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Grg-zw-Ugw"/>
+                            <constraint firstItem="k6W-h0-1NV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NRG-k8-q8q"/>
+                            <constraint firstItem="k6W-h0-1NV" firstAttribute="top" secondItem="GJ3-fN-ciy" secondAttribute="bottom" constant="40" id="cio-zi-vbq"/>
+                            <constraint firstItem="GJ3-fN-ciy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="izf-Mm-pDF"/>
+                            <constraint firstItem="GJ3-fN-ciy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="j8f-iq-qtn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="itemImageView" destination="GJ3-fN-ciy" id="MPO-vk-6KK"/>
+                        <outlet property="itemLabel" destination="k6W-h0-1NV" id="ne0-WA-oPZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="agatha" width="736" height="920"/>
+        <image name="background" width="736" height="1308"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
