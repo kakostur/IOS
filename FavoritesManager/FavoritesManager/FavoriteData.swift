@@ -2,7 +2,7 @@ import UIKit
 
 struct FavoriteData {
 
-    // --- Movies 🎬 ---
+    // Movies
     static let movies: [FavoriteItem] = [
         FavoriteItem(title: "Avengers: Endgame",
                      subtitle: "Russo Brothers, 2019",
@@ -66,7 +66,7 @@ struct FavoriteData {
     ]
 
 
-    // --- Books 📚 ---
+    //  Books
     static let books: [FavoriteItem] = [
         FavoriteItem(title: "Little Women",
                      subtitle: "Louisa May Alcott, 1868",
@@ -139,7 +139,7 @@ struct FavoriteData {
     ]
 
 
-    // --- Music 🎵 ---
+    // Music
     static let music: [FavoriteItem] = [
         FavoriteItem(
             title: "Woke Up",
@@ -214,7 +214,7 @@ struct FavoriteData {
     ]
 
 
-    // --- Courses 🎓 ---
+    // Courses
     static let courses: [FavoriteItem] = [
         FavoriteItem(
             title: "iOS Development",
